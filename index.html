@@ -820,6 +820,14 @@ button {
 
 
         <button
+            type="button"
+            class="salvar"
+            onclick="salvarExperimento()"
+        >
+            💾 SALVAR EXPERIMENTO
+        </button>
+
+        <button
             class="secondary"
             onclick="novoExperimento()"
         >
@@ -2501,18 +2509,7 @@ async function salvarExperimento() {
     }
 
 
-    if (
-        moduloAtual === "plaquear" &&
-        !dadosPlaqueamento
-    ) {
 
-        alert(
-            "Calcule o plaqueamento antes de salvar."
-        );
-
-        return;
-
-    }
 
 
     const totalContado =
